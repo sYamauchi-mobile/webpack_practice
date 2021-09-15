@@ -25,14 +25,28 @@ module.exports = {
                     options: {esModule: false,
                     name: 'images/[name].[ext]'},},
                 ],
-            }
+            },
+            {
+                test: /\.pug/,
+                use: [
+                    {loader: 'html-loader'},
+                    {loader: 'pug-html-loader'},
+                ],
+            },
         ],
     },
-    plugins: [new MiniCssExtractPlugin({
+    plugins: [
+            new MiniCssExtractPlugin({
                 filename: './stylesheets/main.css',
             }),
             new HtmlWebpackPlaugin({
-                template: './src/templates/index.html',
+                template: './src/templates/index.pug',
+                filename: 'index.html',
             }),
-            new CleanWebpackPlugin(),]
+            new HtmlWebpackPlaugin({
+                template: './src/templates/access.pug',
+                filename: 'access.html',
+            }),
+            new CleanWebpackPlugin(),
+    ]
 }
