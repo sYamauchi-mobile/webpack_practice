@@ -1,13 +1,6 @@
-footer {
-  background-color: rebeccapurple; }
+footer{background-color:rebeccapurple}body{color:lightblue}.content .title,.content .title-lg{font-size:24px;color:orange}.content .title-lg{font-size:32px}
 
-body {
-  color: lightblue; }
+p[data-v-3b0b1e98]{color:green}
 
-.content .title, .content .title-lg {
-  font-size: 24px;
-  color: orange; }
 
-.content .title-lg {
-  font-size: 32px; }
-
+/*# sourceMappingURL=main.css.map*/
