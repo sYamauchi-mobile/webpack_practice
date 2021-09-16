@@ -1,0 +1,18 @@
+@import './footer.scss';
+
+$text-color: orange;
+
+body {
+    color: lightblue;
+}
+
+.content {
+    .title {
+        font-size: 24px;
+        color: $text-color;
+    }
+    .title-lg {
+        @extend .title;
+        font-size: 32px;
+    }
+}
