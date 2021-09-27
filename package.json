@@ -41,5 +41,8 @@
     "webpack": "^5.52.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react-is": "^17.0.2"
   }
 }
